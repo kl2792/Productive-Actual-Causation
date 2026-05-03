@@ -8,9 +8,9 @@ Code accompanying the paper **"Productive Actual Causation"**.
 |------|-------------|
 | `src/causation.py` | Core definition: `SCM`, `Checker` (Def 3.3, Alg 1) |
 | `src/bounded_checker.py` | `BoundedChecker` — FPT variant of Alg 1 using witness frontier restriction |
-| `src/hp_modified.py` | HP Modified (2015) baseline |
-| `src/bv_checker.py` | Beckers–Vennekens (2018) baseline |
-| `src/cness_checker.py` | CNESS (Beckers 2021) baseline |
+| `src/baselines/hp_modified.py` | HP Modified (2015) baseline |
+| `src/baselines/bv_checker.py` | Beckers–Vennekens (2018) baseline |
+| `src/baselines/cness_checker.py` | CNESS (Beckers 2021) baseline |
 | `scalability.py` | Scalability experiment (random SCMs, runtime comparison) |
 | `plot_scalability.py` | Plot generation from experiment CSV |
 | `tests/test_checkers.py` | Unit tests — 68 tests covering all 7 paper examples |

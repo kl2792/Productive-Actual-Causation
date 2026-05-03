@@ -27,9 +27,9 @@ from itertools import product as iproduct
 
 from causation import SCM, Checker
 from bounded_checker import BoundedChecker
-from hp_modified import HPChecker
-from bv_checker import BVChecker
-from cness_checker import CNESSChecker
+from baselines.hp_modified import HPChecker
+from baselines.bv_checker import BVChecker
+from baselines.cness_checker import CNESSChecker
 
 
 # ---------------------------------------------------------------------------
