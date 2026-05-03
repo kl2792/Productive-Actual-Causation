@@ -6,8 +6,8 @@ Code accompanying the paper **"Productive Actual Causation"**.
 
 | File | Description |
 |------|-------------|
-| `causation.py` | Core definition: `SCM`, `Checker` (Def 3.3, Alg 1+2) |
-| `bounded_checker.py` | `BoundedChecker` — FPT variant using witness frontier restriction in Alg 2 |
+| `causation.py` | Core definition: `SCM`, `Checker` (Def 3.3, Alg 1) |
+| `bounded_checker.py` | `BoundedChecker` — FPT variant of Alg 1 using witness frontier restriction |
 | `hp_modified.py` | HP Modified (2015) baseline |
 | `bv_checker.py` | Beckers–Vennekens (2018) baseline |
 | `cness_checker.py` | CNESS (Beckers 2021) baseline |
