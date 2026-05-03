@@ -20,7 +20,7 @@ Code accompanying the paper **"Productive Actual Causation"**.
 ![Scalability by indegree](results/scalability_indegree.png)
 
 Runtime comparison across definitions on random binary SCMs (n=1–20 variables,
-densities 0.2/0.4/0.6, indegree bounds k≤2, k≤3, k≤5, unbounded).
+densities 0.2/0.4/0.6, indegree bounds k≤2, k≤3, k≤5).
 500 seeds for our definition; 50 seeds for baselines. Shaded bands = 95% CI.
 
 ## Usage
