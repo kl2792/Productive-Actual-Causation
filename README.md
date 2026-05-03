@@ -31,10 +31,10 @@ pip install -r requirements.txt
 # Run unit tests
 pytest tests/ -v
 
-# Run scalability experiment (full: ~1.8h wall clock on 100 cores, 180 CPU-hours)
-python scalability.py --output results/scalability.csv --workers 100
+# Run scalability experiment (~180 CPU-hours for full reproduction)
+python scalability.py --output results/scalability.csv --workers 8
 
-# Quick smoke test (~5 min on 8 cores)
+# Quick smoke test
 python scalability.py --output results/scalability.csv --workers 8 --seeds-ours 10 --seeds-baselines 10
 
 # Generate plots
