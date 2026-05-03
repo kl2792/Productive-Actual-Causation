@@ -12,6 +12,10 @@ Parameters:
 Run:  python scalability.py [--output results.csv] [--timeout 10] [--workers 100]
       [--seeds-ours 500] [--seeds-baselines 50]
 """
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+
 import csv
 import multiprocessing as mp
 import os

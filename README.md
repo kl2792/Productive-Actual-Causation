@@ -6,14 +6,14 @@ Code accompanying the paper **"Productive Actual Causation"**.
 
 | File | Description |
 |------|-------------|
-| `causation.py` | Core definition: `SCM`, `Checker` (Def 3.3, Alg 1) |
-| `bounded_checker.py` | `BoundedChecker` — FPT variant of Alg 1 using witness frontier restriction |
-| `hp_modified.py` | HP Modified (2015) baseline |
-| `bv_checker.py` | Beckers–Vennekens (2018) baseline |
-| `cness_checker.py` | CNESS (Beckers 2021) baseline |
+| `src/causation.py` | Core definition: `SCM`, `Checker` (Def 3.3, Alg 1) |
+| `src/bounded_checker.py` | `BoundedChecker` — FPT variant of Alg 1 using witness frontier restriction |
+| `src/hp_modified.py` | HP Modified (2015) baseline |
+| `src/bv_checker.py` | Beckers–Vennekens (2018) baseline |
+| `src/cness_checker.py` | CNESS (Beckers 2021) baseline |
 | `scalability.py` | Scalability experiment (random SCMs, runtime comparison) |
 | `plot_scalability.py` | Plot generation from experiment CSV |
-| `test_checkers.py` | Unit tests — 68 tests covering all 7 paper examples |
+| `tests/test_checkers.py` | Unit tests — 68 tests covering all 7 paper examples |
 
 ## Scalability results
 
@@ -29,7 +29,7 @@ densities 0.2/0.4/0.6, indegree bounds k≤2, k≤3, k≤5, unbounded).
 pip install -r requirements.txt
 
 # Run unit tests
-pytest test_checkers.py -v
+pytest tests/ -v
 
 # Run scalability experiment
 python scalability.py --output results/scalability.csv --workers 8
@@ -41,7 +41,7 @@ python plot_scalability.py --input results/scalability.csv --output-dir results
 ## Quick example
 
 ```python
-from causation import SCM, Checker
+from src import SCM, Checker
 
 # Preemption: Suzy throws first, Billy would throw if Suzy didn't
 scm = SCM(
